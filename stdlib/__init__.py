@@ -115,7 +115,7 @@ try:
   import stdlib._data as libdata
   from stdlib._extra import stdlibhelp
   from stdlib.pycolor import *
-  pycolor = stdlib.pycolor
+  import stdlib.pycolor
 except ModuleNotFoundError:
   raise CoModuleNotFoundError
 
