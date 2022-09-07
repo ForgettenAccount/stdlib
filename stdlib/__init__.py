@@ -99,6 +99,8 @@ v2.0.0:
 v2.0.1:
   Bug fixes
   Renamed class CoModuleNotFoundError
+v2.0.2:
+  GitHub fix
 """
 
 class CoModuleNotFoundError(Exception):
@@ -112,7 +114,8 @@ try:
   # I'm still importing for _data
   import stdlib._data as libdata
   from stdlib._extra import stdlibhelp
-  import pycolor
+  from stdlib.pycolor import *
+  pycolor = stdlib.pycolor
 except ModuleNotFoundError:
   raise CoModuleNotFoundError
 
