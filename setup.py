@@ -7,6 +7,5 @@ setup(name="stdlib",
       license="Apache 2.0",
       author="ForgettenAccout",
       packages=["stdlib"],
-      install_requires=['pycolor'],
       zip_safe=False
 )
